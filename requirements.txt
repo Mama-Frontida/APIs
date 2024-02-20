@@ -19,3 +19,4 @@ setuptools==68.2.2
 urllib3==1.26.18
 Werkzeug==2.3.8
 youtube-search
+Flask-Cors==4.0.0
