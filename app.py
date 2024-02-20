@@ -12,7 +12,7 @@ def index():
 @app.route("/generateText", methods=["POST"])
 def generate():
     if request.method == 'POST':
-        input_text = str(request.form['text'])
+        input_text = request.json.get('text')
         response, statusCode = query(input_text)
 
         ## Parse the response content as JSON
