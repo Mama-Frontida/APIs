@@ -32,7 +32,7 @@ def extract_keywords(text):
     return keywords
 
 def searchYT(input,max_results=5):
-    results = YoutubeSearch(input, max_results=max_results).to_dict()
+    results = YoutubeSearch(f'postpartum,depression,{input}', max_results=max_results).to_dict()
 
     # Keywords that might indicate triggering content
     triggering_keywords = ['sad', 'dies by suicide', 'death by suicide', 'self-harm', 'triggering']
